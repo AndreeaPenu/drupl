@@ -27,7 +27,7 @@ body {
 
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-  bottom: 3rem;
+  bottom: 7rem;
   z-index: 10; }
 
 /* Declare heights because of positioning of img element */
@@ -41,6 +41,19 @@ body {
   left: 0;
   min-width: 100%;
   height: 32rem; }
+
+.first-slide, .second-slide, .third-slide {
+  background: #45BDDC; }
+
+.testim {
+  background: #FFFFFF; }
+  .testim h1, .testim p {
+    color: #000; }
+
+.fred {
+  width: 150px;
+  height: 170px;
+  margin-bottom: 20px; }
 
 /* MARKETING CONTENT
   -------------------------------------------------- */
@@ -107,8 +120,12 @@ body p, body a {
   width: 140px;
   height: 140px;
   margin: 0 auto;
-  margin-bottom: 20px;
-  background: #45BDDC; }
+  margin-bottom: 20px; }
+  .rounded-circle img {
+    width: 100px;
+    height: 120px;
+    position: absolute;
+    right: 140px; }
 
 .numb h2 {
   font-weight: 600; }
@@ -118,6 +135,3 @@ footer {
   color: #FFFFFF; }
   footer a {
     color: #FFFFFF; }
-
-.first-slide {
-  background: #45BDDC; }

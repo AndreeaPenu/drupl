@@ -1,8 +1,53 @@
 @import 'config';
+@import 'buttons';
+@import 'carousel';
 @import 'menu';
 
-$bgColor: #ccc;
-
 body {
-    background: $bgColor;
+    h2 {
+        font-family: $primary-font!important;
+    }
+
+    p, a{
+        font-family: $secondary-font!important;
+    }
+}
+
+.hero {
+    background: $primary-color;
+    font-family: $secondary-font;
+    padding: 100px 100px 100px 300px;
+    color: $white;
+    h2 {
+        font-weight: 700;
+    }
+    p {
+        font-weight: 100;
+    }
+}
+
+.rounded-circle {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background: $primary-color;
+}
+
+.numb {
+    h2 {
+        font-weight: 600;
+    }
+}
+
+footer {
+    background: $primary-color;
+    color: $white;
+    a {
+        color: $white;
+    }
+}
+
+.first-slide {
+    background: $primary-color;
 }

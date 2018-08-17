@@ -24,6 +24,18 @@ body {
     height: 50%;
 }
 
+#about {
+    h3 {
+        color: $primary-color;
+    }
+    .hero {
+        background: $primary-color;
+    }
+    #team {
+        padding: 4rem 0;
+    }
+}
+
 .hero {
     font-family: $secondary-font;
     color: $white;
@@ -148,5 +160,44 @@ footer {
     .price {
         font-size: 3rem;
         color: $primary-color;
+    }
+}
+
+.stats {
+    width: 50%;
+    height: 13px;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 6px;
+    margin-bottom: 7px;
+}
+
+.water{
+    background: #98D4F2;
+    height: 9px;
+    border-radius: 6px;
+    &#chris {
+        width: 75px;
+    }
+    &#carol {
+        width: 119px;
+    }
+    &#ben {
+        width: 5px;
+    }
+}
+
+.sun {
+    background: #EDED54;
+    height: 9px;
+    border-radius: 6px;
+    &#chris {
+        width: 52px;
+    }
+    &#carol {
+        width: 150px;
+    }
+    &#ben {
+        width: 100px;
     }
 }

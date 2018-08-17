@@ -120,6 +120,15 @@ body {
   width: 23%;
   height: 50%; }
 
+#about h3 {
+  color: #45BDDC; }
+
+#about .hero {
+  background: #45BDDC; }
+
+#about #team {
+  padding: 4rem 0; }
+
 .hero {
   font-family: "Overpass";
   color: #FFFFFF; }
@@ -215,3 +224,33 @@ footer {
   .modal-body .price {
     font-size: 3rem;
     color: #45BDDC; }
+
+.stats {
+  width: 50%;
+  height: 13px;
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius: 6px;
+  margin-bottom: 7px; }
+
+.water {
+  background: #98D4F2;
+  height: 9px;
+  border-radius: 6px; }
+  .water#chris {
+    width: 75px; }
+  .water#carol {
+    width: 119px; }
+  .water#ben {
+    width: 5px; }
+
+.sun {
+  background: #EDED54;
+  height: 9px;
+  border-radius: 6px; }
+  .sun#chris {
+    width: 52px; }
+  .sun#carol {
+    width: 150px; }
+  .sun#ben {
+    width: 100px; }

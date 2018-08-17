@@ -1,19 +1,20 @@
 .btn-primary {
   background: #45BDDC;
   border: #45BDDC; }
+  .btn-primary:hover {
+    background: #26a7c8; }
 
 .btn-secondary {
   background: #36454F;
   border: #36454F; }
 
 .btn-lg {
-  border-radius: 1rem;
+  border-radius: 50px;
   padding: 0.5rem 1.5rem;
   font-weight: 600; }
 
 /* GLOBAL STYLES
 -------------------------------------------------- */
-/* Padding below the footer and lighter body text */
 body {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -21,16 +22,13 @@ body {
 
 /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
-/* Carousel base class */
 .carousel {
   margin-bottom: 4rem; }
 
-/* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   bottom: 7rem;
   z-index: 10; }
 
-/* Declare heights because of positioning of img element */
 .carousel-item {
   height: 32rem;
   background-color: #777; }
@@ -48,16 +46,23 @@ body {
 .testim {
   background: #FFFFFF; }
   .testim h1, .testim p {
-    color: #000; }
+    color: #000000; }
 
-.fred {
-  width: 150px;
-  height: 170px;
-  margin-bottom: 20px; }
+.testimonial-pic {
+  width: 19%;
+  margin-bottom: 20px;
+  border-radius: 50%; }
+
+.card {
+  background: transparent;
+  border: 0; }
+  .card .card-body {
+    background: transparent; }
+    .card .card-body .lead {
+      color: #FFFFFF; }
 
 /* MARKETING CONTENT
   -------------------------------------------------- */
-/* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center; }
@@ -72,10 +77,8 @@ body {
 /* Featurettes
   ------------------------- */
 .featurette-divider {
-  margin: 5rem 0;
-  /* Space out the Bootstrap <hr> more */ }
+  margin: 5rem 0; }
 
-/* Thin out the marketing headings */
 .featurette-heading {
   font-weight: 300;
   line-height: 1;
@@ -84,7 +87,6 @@ body {
 /* RESPONSIVE CSS
   -------------------------------------------------- */
 @media (min-width: 40em) {
-  /* Bump up size of carousel content */
   .carousel-caption p {
     margin-bottom: 1.25rem;
     font-size: 1.25rem;
@@ -100,38 +102,116 @@ body {
   font-weight: 200;
   background: #45BDDC; }
 
-body h2 {
-  font-family: "Chivo" !important; }
+.navbar {
+  padding: 0.5rem 6rem; }
 
-body p, body a {
-  font-family: "Overpass" !important; }
+body {
+  padding-top: 0; }
+  body h2 {
+    font-family: "Chivo" !important; }
+  body p, body a {
+    font-family: "Overpass" !important; }
+  body a {
+    color: #FFFFFF; }
+    body a:hover {
+      color: #36454F; }
+
+#logo {
+  width: 23%;
+  height: 50%; }
 
 .hero {
-  background: #45BDDC;
   font-family: "Overpass";
-  padding: 100px 100px 100px 300px;
   color: #FFFFFF; }
   .hero h2 {
-    font-weight: 700; }
+    font-weight: 700;
+    font-size: 3rem; }
   .hero p {
-    font-weight: 100; }
+    font-weight: 100;
+    position: absolute;
+    top: 400px;
+    left: 50%; }
+  .hero #fred {
+    position: absolute;
+    width: 12%;
+    top: 347px;
+    right: 300px; }
+  .hero #fred-arrow {
+    top: 415px;
+    left: 51.3%; }
+    .hero #fred-arrow img {
+      width: 22px;
+      height: 34px; }
+  .hero .shape {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1; }
+  .hero .hero-text {
+    padding: 43px 100px 100px 300px; }
 
-.rounded-circle {
-  width: 140px;
-  height: 140px;
-  margin: 0 auto;
-  margin-bottom: 20px; }
-  .rounded-circle img {
+.marketing#iphone {
+  padding: 155px 0 100px 0; }
+
+.marketing {
+  padding: 60px 0; }
+
+.featurette-heading {
+  margin-top: 5rem; }
+
+.numbers-icons {
+  height: 140px; }
+  .numbers-icons img {
     width: 100px;
     height: 120px;
     position: absolute;
     right: 140px; }
 
 .numb h2 {
-  font-weight: 600; }
+  font-weight: 600;
+  color: #45BDDC; }
+
+#product {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/plant-moods.png");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  #product h2 {
+    font-weight: 600;
+    color: #FFFFFF; }
+  #product p {
+    color: #FFFFFF; }
+  #product .info {
+    padding: 120px 0; }
+  #product .big {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+    padding: 3rem 0 2rem 0; }
 
 footer {
+  padding: 40px;
   background: #45BDDC;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  height: 100px;
+  position: absolute; }
   footer a {
     color: #FFFFFF; }
+  footer .row {
+    padding: 0 40px; }
+  footer .fab {
+    padding: 0 10px;
+    font-size: 1.5rem; }
+  footer a:hover {
+    color: #36454F;
+    text-decoration: none; }
+
+.modal-dialog {
+  max-width: 1000px; }
+
+.modal-body {
+  padding: 3rem 0rem 0rem 4rem; }
+  .modal-body img {
+    height: 70%; }
+  .modal-body .price {
+    font-size: 3rem;
+    color: #45BDDC; }

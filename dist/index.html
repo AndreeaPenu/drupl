@@ -1,177 +1,232 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Drupl</title>
-       
-        <!-- Bootstrap -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <!-- Custom -->
-        <link rel="stylesheet" href="css/main.css">
-
-    </head>
-    <body>
-        <header>
-            <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-              <a class="navbar-brand" href="#">Drupl</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Product</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          </header>
-      
-          <main role="main">
-      
-            <div class="hero">
-                <h2>This is Fred </br>
-                    You probably think Fred is doing great. </br>
-                    How do you know for sure? 
-                </h2>
-
-                <p>> Ask Fred</p>
-
-            </div>
-            <div class="container marketing">
-
-                <div class="row featurette">
-                    <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading">How are you feeling, Fred?</h2>
-                    <p class="lead">It looks like he’s doing fine. Cacti don’t need a lot of sun, but Fred could use some water.</p>
-                    <p>Want to know how your plant friends are doing?</p>
-                    <a href="#" class="btn btn-primary btn-lg">Download Now</a>
-                    <a href="#" class="btn btn-secondary btn-lg">Watch The Video</a>
-                    </div>
-                    <div class="col-md-5 order-md-1">
-                    <img class="featurette-image img-fluid mx-auto" src="images/app.png" alt="Generic placeholder image">
-                    </div>
-                </div>
-
-                
-             
-            </div>
-            </div>
-
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img class="first-slide">
-                  <div class="container">
-                    <div class="carousel-caption">
-                        <img class="fred" src="images/cactus-t.png" alt="Fred's Friend">
-                        <div class="card">
-                            <div class="card-body testim">
-                                
-                                <p class="lead">"Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit."</p>
-                      
-                            </div>
-                        </div>
-                
-                      
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img class="second-slide">
-                  <div class="container">
-                    <div class="carousel-caption">
-                            <img class="fred" src="images/cactus-t.png" alt="Fred's Friend">
-                            <div class="card">
-                                    
-                                    <div class="card-body testim">
-                                        
-                                        <p class="lead">"Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit."</p>
-                              
-                                    </div>
-                                </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img class="third-slide">
-                  <div class="container">
-                    <div class="carousel-caption">
-                            <img class="fred" src="images/cactus-t.png" alt="Fred's Friend">
-                            <div class="card">
-                                    <div class="card-body testim">
-                                       
-                                        <p class="lead">"Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit."</p>
-                              
-                                    </div>
-                                </div>
-                    </div>
-                  </div>
+<head>
+  <meta charset="UTF-8">
+  <title>Drupl</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <!-- Custom -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <a class="navbar-brand" href="#">
+        <img id="logo" src="images/logo.png" alt="Drupl">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="product.html">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main role="main">
+    <div class="hero">
+      <img class="shape" src="images/shape.png" alt="Shape">
+      <div class="hero-text">
+        <h2>This is Fred </br>
+          You probably think Fred is doing great. </br>
+          How do you know for sure?
+        </h2>
+        <img id="fred" src="images/Fred.png" alt="Fred">
+        <p id="fred-arrow">
+          <a href="#iphone"><img src="images/down-arrow.svg" alt="arrow down">
+          </a> 
+        </p>
+        <p>Ask Fred</p>
+      </div>
+    </div>
+    <div class="container marketing" id="iphone">
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">How are you feeling, Fred?</h2>
+          <p class="lead mt-4">It looks like he’s doing fine. Succulents don’t need a lot of sun, but Fred could use some water.</p>
+          <p class="mt-4">Want to know how your plant friends are doing?</p>
+          <a href="https://play.google.com/" class="btn btn-primary btn-lg">Download now</a>
+          <a href="https://youtube.com" class="btn btn-secondary btn-lg">Watch the video</a>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img class="featurette-image img-fluid mx-auto" src="images/app2.png" alt="App">
+        </div>
+      </div>
+    </div>
+    </div>
+    <div id="product">
+      <div class="container marketing info">
+        <h2>Product</h2>
+        <p class="mb-4">Connects with the app</p>
+        <p class="big">We've connected a Raspberry Pi with a Humidity Sensor. </br>
+          Because of this we are able to tell how your plant friends are feeling </br> at any moment of the day. </p>
+        <a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModal">Shut up and take my money!</a>
+        <a href="product.html" class="btn btn-secondary btn-lg">Tell me more</a>
+      </div>
+    </div>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="first-slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <img class="testimonial-pic" src="images/carol.jpg" alt="Carol">
+              <div class="card">
+                <div class="card-body testim">
+                  <p class="lead">"Because of Drupl I always know when to water my plants. It's easy to use and even fun!"</p>
                 </div>
               </div>
-              <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
             </div>
-      
-            <div class="container marketing numb">
-                <h2>Seeing is Believing</h2>
-                <p class="mb-4" >Check out our numbers</p>
-              <div class="row">
-                <div class="col-lg-4">
-                  <div class="rounded-circle"> <img src="/dist/images/cactus-t.png" alt="cactus"></div>
-                  <h2>1564</h2>
-                  <p>Saved Plants</p>
-                </div>
-                <div class="col-lg-4">
-                 <div class="rounded-circle"><img src="/dist/images/cactus-t.png" alt="cactus"></div>  
-                 <h2>3500+</h2>
-                  <p>Happy Plants</p>
-                </div>
-                <div class="col-lg-4">
-                    <div class="rounded-circle"><img src="/dist/images/cactus-t.png" alt="cactus"></div> 
-                    <h2>15</h2>
-                    <p>Plants That Really Need a Drink</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="second-slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <img class="testimonial-pic" src="images/chris.jpg" alt="Chris">
+              <div class="card">
+                <div class="card-body testim">
+                  <p class="lead">"I used to forget to water my plants, but now that I have the Drupl app and device I always get a reminder."</p>
                 </div>
               </div>
-      
-      
-            
-      
             </div>
-      
-      
-            <!-- FOOTER -->
-            <footer class="container-fluid">
-              <p class="float-right"><a href="#">Back to top</a></p>
-              <p>&copy; Drupl 2018 </p>
-            </footer>
-          </main>
-    </body>
-
-    <!-- Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <!-- Custom -->
-    <script src="js/main.js"></script>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="third-slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <img class="testimonial-pic" src="images/ben.jpg" alt="Ben">
+              <div class="card">
+                <div class="card-body testim">
+                  <p class="lead">"I've bonded so well with Erik, my succulen. Can't thank Drulp enough!"</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <div class="container marketing numb">
+      <h2>Seeing is Believing</h2>
+      <p class="mb-4">Check out our numbers</p>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="numbers-icons">
+            <img src="/dist/images/hulk.svg" alt="Hero">
+          </div>
+          <h2>1564</h2>
+          <p>Saved Plants</p>
+        </div>
+        <div class="col-lg-4">
+          <div class="numbers-icons">
+            <img src="/dist/images/plant.svg" alt="Plant">
+          </div>
+          <h2>3500+</h2>
+          <p>Happy Plants</p>
+        </div>
+        <div class="col-lg-4">
+          <div class="numbers-icons">
+            <img src="/dist/images/beer.svg" alt="Drink">
+          </div>
+          <h2>152</h2>
+          <p>Plants That Really Need a Drink</p>
+        </div>
+      </div>
+    </div>
+  <!-- MODAL -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Drupl Device</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="images/product.png" alt="Raspberrypi">
+            </div>
+            <div class="col-md-6">
+              <h2>Drupl Humidity Detector</h2>
+              <p>Classic Device</p>
+              <p class="price">€158,00</p>
+              <a href="#" data-dismiss="modal" class="btn btn-primary btn-lg">Add to Order</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- FOOTER -->
+    <footer class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <a href="http://www.instagram.com">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="http://www.twitter.com">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="http://www.facebook.com">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <p class="text-center">&copy; Drupl 2018 </p>
+        </div>
+        <div class="col-md-4">
+          <p class="float-right">
+            <a href="#">Back to top</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </main>
+</body>
+<!-- Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+  crossorigin="anonymous"></script>
+<!-- Custom -->
+<script src="js/main.js"></script>
 </html>

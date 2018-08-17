@@ -36,6 +36,12 @@ body {
     }
 }
 
+#product-page {
+    .hero {
+        background: $primary-color;
+    }
+}
+
 .hero {
     font-family: $secondary-font;
     color: $white;

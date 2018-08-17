@@ -129,6 +129,9 @@ body {
 #about #team {
   padding: 4rem 0; }
 
+#product-page .hero {
+  background: #45BDDC; }
+
 .hero {
   font-family: "Overpass";
   color: #FFFFFF; }

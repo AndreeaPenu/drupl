@@ -109,7 +109,8 @@ body {
   padding-top: 0; }
   body h2 {
     font-family: "Chivo" !important; }
-  body p, body a {
+  body p,
+  body a {
     font-family: "Overpass" !important; }
   body a {
     color: #FFFFFF; }
@@ -128,6 +129,8 @@ body {
 
 #about #team {
   padding: 4rem 0; }
+  #about #team .testimonail-pic {
+    width: 70%; }
 
 #product-page .hero {
   background: #45BDDC; }
@@ -238,22 +241,43 @@ footer {
 
 .water {
   background: #98D4F2;
-  height: 9px;
+  height: 8px;
   border-radius: 6px; }
   .water#chris {
-    width: 75px; }
+    width: 55%; }
   .water#carol {
-    width: 119px; }
+    width: 82%; }
   .water#ben {
-    width: 5px; }
+    width: 10%; }
 
 .sun {
   background: #EDED54;
-  height: 9px;
+  height: 8px;
   border-radius: 6px; }
   .sun#chris {
-    width: 52px; }
+    width: 32%; }
   .sun#carol {
-    width: 150px; }
+    width: 92%; }
   .sun#ben {
-    width: 100px; }
+    width: 56%; }
+
+@media screen and (max-width: 500px) {
+  .hero .hero-text {
+    padding-left: 180px; }
+    .hero .hero-text h2 {
+      font-size: 1.5rem; }
+    .hero .hero-text p {
+      top: 260px; }
+    .hero .hero-text #fred-arrow {
+      top: 275px;
+      left: 52.3%; }
+    .hero .hero-text #fred {
+      top: 245px;
+      right: 173px; }
+  .featurette-heading {
+    font-size: 32px;
+    margin-top: 0; }
+  .number-icons img {
+    position: unset; }
+  footer {
+    bottom: 0; } }

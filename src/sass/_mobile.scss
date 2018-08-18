@@ -1,0 +1,43 @@
+// Widescreens
+@include mediaXl {}
+
+// Desktops & laptops
+@include mediaLg {}
+
+// Tablets & Small laptops
+@include mediaMd {}
+
+// Smartphones
+@include mediaSm {
+    .hero {
+        .hero-text {
+            padding-left: 180px;
+            h2 {
+                font-size: 1.5rem;
+            }
+            p {
+                top: 260px;
+            }
+            #fred-arrow {
+                top: 275px;
+                left: 52.3%;
+            }
+            #fred {
+                top: 245px;
+                right: 173px;
+            }
+        }
+    }
+    .featurette-heading {
+        font-size: 32px;
+        margin-top: 0;
+    }
+    .number-icons {
+        img {
+            position: unset;
+        }
+    }
+    footer {
+        bottom: 0;
+    }
+}

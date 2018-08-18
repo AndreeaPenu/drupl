@@ -1,9 +1,32 @@
 $primary-font: 'Chivo';
 $secondary-font: 'Overpass';
-
 $primary-color: #45BDDC;
 $secondary-color: #36454F;
 $lightgray: #CED0CE;
 $platinum: #E6E8E6;
 $white: #FFFFFF;
 $black: #000000;
+// Media query mixins
+@mixin mediaSm {
+    @media screen and (max-width: 500px) {
+        @content;
+    }
+}
+
+@mixin mediaMd {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mediaLg {
+    @media screen and (min-width: 769px) and (max-width: 1170px) {
+        @content;
+    }
+}
+
+@mixin mediaXl {
+    @media screen and (min-width: 1171px) {
+        @content;
+    }
+}

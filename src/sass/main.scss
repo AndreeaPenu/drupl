@@ -2,16 +2,16 @@
 @import 'buttons';
 @import 'carousel';
 @import 'menu';
-
 body {
     padding-top: 0;
     h2 {
         font-family: $primary-font!important;
     }
-    p, a{
+    p,
+    a {
         font-family: $secondary-font!important;
     }
-    a{
+    a {
         color: $white;
         &:hover {
             color: $secondary-color;
@@ -33,6 +33,9 @@ body {
     }
     #team {
         padding: 4rem 0;
+        .testimonail-pic {
+            width: 70%;
+        }
     }
 }
 
@@ -80,14 +83,13 @@ body {
     }
 }
 
-.marketing#iphone{
+.marketing#iphone {
     padding: 155px 0 100px 0;
 }
 
 .marketing {
     padding: 60px 0;
 }
-
 
 .featurette-heading {
     margin-top: 5rem;
@@ -111,7 +113,7 @@ body {
 }
 
 #product {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/plant-moods.png");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/plant-moods.png");
     background-size: cover;
     background-repeat: no-repeat;
     h2 {
@@ -122,7 +124,7 @@ body {
         color: $white;
     }
     .info {
-       padding: 120px 0;
+        padding: 120px 0;
     }
     .big {
         font-size: 2rem;
@@ -178,32 +180,34 @@ footer {
     margin-bottom: 7px;
 }
 
-.water{
+.water {
     background: #98D4F2;
-    height: 9px;
+    height: 8px;
     border-radius: 6px;
     &#chris {
-        width: 75px;
+        width: 55%;
     }
     &#carol {
-        width: 119px;
+        width: 82%;
     }
     &#ben {
-        width: 5px;
+        width: 10%;
     }
 }
 
 .sun {
     background: #EDED54;
-    height: 9px;
+    height: 8px;
     border-radius: 6px;
     &#chris {
-        width: 52px;
+        width: 32%;
     }
     &#carol {
-        width: 150px;
+        width: 92%;
     }
     &#ben {
-        width: 100px;
+        width: 56%;
     }
 }
+
+@import "mobile";

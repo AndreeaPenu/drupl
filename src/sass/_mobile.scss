@@ -9,35 +9,97 @@
 
 // Smartphones
 @include mediaSm {
+    #logo {
+        width: 18%;
+    }
+    .navbar {
+        padding: .5rem 1rem;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+    .navbar-toggler {
+        position: absolute;
+        left: 28%;
+    }
+    #about {
+        .hero {
+            padding-bottom: 20px;
+        }
+    }
     .hero {
+        .shape {
+            width: auto;
+        }
         .hero-text {
-            padding-left: 180px;
-            h2 {
-                font-size: 1.5rem;
-            }
-            p {
-                top: 260px;
-            }
-            #fred-arrow {
-                top: 275px;
-                left: 52.3%;
-            }
-            #fred {
-                top: 245px;
-                right: 173px;
-            }
+            padding: 88px 0px 10px 31px;
+        }
+        h2 {
+            font-size: 1.5rem;
+        }
+        p {
+            top: 230px;
+        }
+        #fred-arrow {
+            top: 241px;
+            left: 55.3%;
+        }
+        #fred {
+            width: 18%;
+            top: 247px;
+            right: 24px;
         }
     }
     .featurette-heading {
-        font-size: 32px;
         margin-top: 0;
     }
-    .number-icons {
-        img {
-            position: unset;
+    .featurette-image {
+        margin-top: 20px;
+    }
+    .marketing#iphone {
+        text-align: center;
+        padding: 155px 0 60px 0;
+    }
+    #iphone {
+        p {
+            display: none;
         }
     }
     footer {
-        bottom: 0;
+        text-align: center;
+        height: auto;
+        .float-right {
+            float: none!important;
+        }
+    }
+    .btn-lg {
+        padding: .5rem 1rem;
+        margin: 10px 0;
+    }
+    .number-icons {
+        img {
+            position: unset!important;
+        }
+    }
+    .numb {
+        h2,
+        p {
+            text-align: center;
+        }
+    }
+    .testimonial-pic {
+        width: 50%;
+    }
+    .carousel-caption {
+        bottom: 4rem;
+    }
+    #product {
+        text-align: center;
+        .big {
+            font-size: 1.4rem;
+            padding: 0rem 0 2rem 0;
+        }
     }
 }

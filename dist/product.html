@@ -1,138 +1,133 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <title>Drupl</title>
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
-  <!-- Font awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-    crossorigin="anonymous">
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
-  <!-- Custom -->
-  <link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <title>Drupl</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Custom -->
+    <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-  <header>
-    <nav class="navbar navbar-expand-md navbar-dark">
-      <a class="navbar-brand" href="#">
-        <img id="logo" src="images/logo.png" alt="Drupl">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
-        aria-expanded="false" aria-label="Toggle navigation">
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <a class="navbar-brand" href="#">
+                <img id="logo" src="images/logo.png" alt="Drupl">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home
             </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="product.html">Product</a>
-            <span class="sr-only">(current)</span>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <main role="main">
-      <div id="product-page">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="product.html">Product</a>
+                        <span class="sr-only">(current)</span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main role="main">
+        <div id="product-page">
             <div class="hero">
                 <div class="hero-text">
                     <h2>How this thing works</h2>
                 </div>
             </div>
             <div class="container marketing">
-                    <div class="row featurette">
-                      <div class="col-md-7 order-md-2">
+                <div class="row featurette">
+                    <div class="col-md-7 order-md-1">
                         <h2 class="featurette-heading">Soil Humidity Sensor</h2>
-                        <p class="lead mt-4">The Soil Humidity Sensor gives us an analog output
-                            variable voltage reading that allows us to estimate the moisture content of soil.
-                            Because of this we can tell you either "Yes the plant has enough water" or "No, the plant needs watering".
+                        <p class="lead mt-4">The Soil Humidity Sensor gives us an analog output variable voltage reading that allows us to estimate the moisture content of soil. Because of this we can tell you either "Yes the plant has enough water" or "No, the plant needs
+                            watering".
                         </p>
-        
-                      </div>
-                      <div class="col-md-5 order-md-1">
-                        <img class="featurette-image img-fluid mx-auto" src="images/sensor.jpg" alt="Sensor">
-                      </div>
+
                     </div>
-                  </div>
+                    <div class="col-md-5 order-md-2">
+                        <img class="featurette-image img-fluid mx-auto" src="images/sensor.jpg" alt="Sensor">
+                    </div>
+                </div>
+            </div>
 
-                  <div class="container marketing">
-                        <div class="row featurette">
-                            <div class="col-md-5 order-md-1">
-                                <img class="featurette-image img-fluid mx-auto" src="images/raspberrypi.png" alt="RaspberryPi">
-                            </div>
-                          <div class="col-md-7 order-md-2">
-                            <h2 class="featurette-heading">Raspberry Pi</h2>
-                            <p class="lead mt-4">The Raspberry Pi is a credit-card-size computer that
-                                plugs into your TV and a keyboard. It is a capable little computer which can be
-                                used in electronic projects.
-                                We have programmed it to tell us how much water and sun your plants are getting.
-                            </p>
-                           
-                          </div>
-                          
-                        </div>
-                      </div>
+            <div class="container marketing">
+                <div class="row featurette">
+                    <div class="col-md-5 order-md-1">
+                        <img class="featurette-image img-fluid mx-auto" src="images/raspberrypi.png" alt="RaspberryPi">
+                    </div>
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading">Raspberry Pi</h2>
+                        <p class="lead mt-4">The Raspberry Pi is a credit-card-size computer that plugs into your TV and a keyboard. It is a capable little computer which can be used in electronic projects. We have programmed it to tell us how much water and sun your plants
+                            are getting.
+                        </p>
 
-                      <div class="container marketing">
-                            <div class="row featurette">
-                                <div class="col-md-5 order-md-1">
-                                    <img class="featurette-image img-fluid mx-auto" src="images/app2.png" alt="Drupl App">
-                                </div>
-                              <div class="col-md-7 order-md-2">
-                                <h2 class="featurette-heading">Drupl App</h2>
-                                <p class="lead mt-4">With the Drupl App you can read the output of the Raspberry Pi.
-                                    In an enjoyable way, ofcourse. You can add all your plant friends to the app to have a nice
-                                    overview of how they are doing. You can also see how well you are taking care of your plants.
-                                    Water your plants and earn achievements!
-                                </p>
-                               
-                              </div>
-                              
-                            </div>
-                          </div>
-      </div>
-    <!-- FOOTER -->
-    <footer class="container-fluid">
-      <div class="row">
-        <div class="col-md-4">
-          <a href="http://www.instagram.com">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="http://www.twitter.com">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="http://www.facebook.com">
-            <i class="fab fa-facebook"></i>
-          </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container marketing">
+                <div class="row featurette">
+                    <div class="col-md-5 order-md-1">
+
+                        <h2 class="featurette-heading">Drupl App</h2>
+                        <p class="lead mt-4">With the Drupl App you can read the output of the Raspberry Pi. In an enjoyable way, ofcourse. You can add all your plant friends to the app to have a nice overview of how they are doing. You can also see how well you are taking
+                            care of your plants. Water your plants and earn achievements!
+                        </p>
+
+                    </div>
+                    <div class="col-md-7 order-md-2">
+                        <img class="featurette-image img-fluid mx-auto" src="images/app2.png" alt="Drupl App">
+
+                    </div>
+
+                </div>
+            </div>
         </div>
-        <div class="col-md-4">
-          <p class="text-center">&copy; Drupl 2018 </p>
-        </div>
-        <div class="col-md-4">
-          <p class="float-right">
-            <a href="#">Back to top</a>
-          </p>
-        </div>
-      </div>
-    </footer>
-  </main>
+        <!-- FOOTER -->
+        <footer class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="http://www.instagram.com">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="http://www.twitter.com">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="http://www.facebook.com">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <p class="text-center">&copy; Drupl 2018 </p>
+                </div>
+                <div class="col-md-4">
+                    <p class="float-right">
+                        <a href="#">Back to top</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </main>
 </body>
 <!-- Bootstrap -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-  crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-  crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-  crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <!-- Custom -->
 <script src="js/main.js"></script>
+
 </html>
